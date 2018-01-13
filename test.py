@@ -24,7 +24,6 @@ turtle.forward(100)
 turtle.right(45)
 turtle.color("red")
 turtle.forward(80)
-#done函数使图像稳定输出
 
 #penup函数抬起笔
 turtle.penup()
@@ -36,5 +35,5 @@ turtle.pendown()
 #用circle函数绘制圆
 turtle.color("purple")
 turtle.circle(60)
-
+#done函数使图像稳定输出
 turtle.done()
