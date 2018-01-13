@@ -2,7 +2,11 @@
 print("Welcome to python!")
 print("Python is fun!")
 print("Problem driven!")
-
+print('Welcome to python!')
+print('''This is the first line.
+        This is the second line.
+        This is the third line.''')
+print("Problem driven!")
 print((10.5+2*3)/(45-3.5))
 
 #test turtle
