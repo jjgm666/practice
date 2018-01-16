@@ -70,3 +70,17 @@ print(a,b,c)
 purchaseAmount=eval(input("输入营业额："))
 tax=purchaseAmount*0.06
 print("营业额为",int(tax*100)/100.0)  #保留了两位小数
+
+#显示当前时间
+import time
+
+currrntTime = time.time()
+totalSeconds = int(currrntTime)
+nowSeconds = totalSeconds % 60
+totalMinutes = totalSeconds // 60
+nowMinutes = totalMinutes % 60
+totalHours = totalMinutes // 60
+nowHours = totalHours % 24
+print("现在时间：",nowHours,"时",nowMinutes,"分",nowSeconds,"秒")
+
+
