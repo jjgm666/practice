@@ -69,7 +69,7 @@ print(a,b,c)
 #营业税保留两位小数
 purchaseAmount=eval(input("输入营业额："))
 tax=purchaseAmount*0.06
-print("营业额为",int(tax*100)/100.0)  #保留了两位小数
+print("营业税为",int(tax*100)/100.0)  #保留了两位小数
 
 #显示当前时间
 import time
