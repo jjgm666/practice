@@ -38,5 +38,46 @@ while guess != number:
     else:
         print("您猜对了！")
 
-# 输入输出重定向
+#2.输入输出重定向
+"""
+python Sentinelvalue.py < input.txt
+python Script.py > output.txt
+
+python Sentinelvalue.py < input.txt> output.txt
+"""
+
+#3.for循环
+for v in range(4,8):
+    print(v)
+
+#range()函数
+"""
+for(a,b,k)
+a 是序列中的第一个数
+b 是界限值（不取到）
+k 是步进值
+
+"""
+
+#4.关键字 break 和 continue
+sum=0
+number=0
+while number < 20:
+    number += 1
+    sum +=number
+    if sum >= 100:
+        break
+
+    print("The number is :",number)
+    print("The sum is :",sum)
+
+sum=0
+number=0
+while number < 20:
+    number += 1
+    if number == 10 or number == 11:
+        continue
+    sum += number
+
+print("The sum is:",sum)
 
