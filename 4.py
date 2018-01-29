@@ -10,16 +10,17 @@ i = 1
 while i < 10:
     sum = sum + i
     i += 1
-print("sum is:",sum)
+print("sum is:", sum)
 
 import random
-number1 = random.randint(0,9)
-number2 = random.randint(0,9)
+
+number1 = random.randint(0, 9)
+number2 = random.randint(0, 9)
 
 if number1 < number2:
-    number1,number2 = number2,number1
+    number1, number2 = number2, number1
 
-answer = eval(input("请输入下面式子的正确答案：\n"+ str(number1) + "+" + str(number2) + "="))
+answer = eval(input("请输入下面式子的正确答案：\n" + str(number1) + "+" + str(number2) + "="))
 
 while answer != number1 + number2:
     print("答案错误，请重试！")
@@ -27,7 +28,7 @@ while answer != number1 + number2:
 print("答案正确！")
 
 print("······猜数字游戏(0~100)······")
-number = random.randint(0,100)
+number = random.randint(0, 100)
 guess = 0
 while guess != number:
     guess = eval(input("请输入猜想的数字："))
@@ -38,7 +39,7 @@ while guess != number:
     else:
         print("您猜对了！")
 
-#2.输入输出重定向
+# 2.输入输出重定向
 """
 python Sentinelvalue.py < input.txt
 python Script.py > output.txt
@@ -46,11 +47,11 @@ python Script.py > output.txt
 python Sentinelvalue.py < input.txt> output.txt
 """
 
-#3.for循环
-for v in range(4,8):
+# 3.for循环
+for v in range(4, 8):
     print(v)
 
-#range()函数
+# range()函数
 """
 for(a,b,k)
 a 是序列中的第一个数
@@ -59,25 +60,24 @@ k 是步进值
 
 """
 
-#4.关键字 break 和 continue
-sum=0
-number=0
+# 4.关键字 break 和 continue
+sum = 0
+number = 0
 while number < 20:
     number += 1
-    sum +=number
+    sum += number
     if sum >= 100:
         break
 
-    print("The number is :",number)
-    print("The sum is :",sum)
+    print("The number is :", number)
+    print("The sum is :", sum)
 
-sum=0
-number=0
+sum = 0
+number = 0
 while number < 20:
     number += 1
     if number == 10 or number == 11:
         continue
     sum += number
 
-print("The sum is:",sum)
-
+print("The sum is:", sum)
