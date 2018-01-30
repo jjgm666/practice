@@ -67,3 +67,37 @@ def main():
 
 
 main()
+
+# 变量的作用域
+def function():
+    x=4.5
+    y=3.5
+    print(x)
+    print(y)
+
+function()
+'''
+print(x)   # 报错
+print(y)
+'''
+
+# 默认参数的设置和调用
+def printArea(width =1,height=1):
+    area = width*height
+    print("Width:",width,"\tHeight:",height,"\tArea:",area)
+
+printArea()
+printArea(2,4.5)
+printArea(height=5,width=3)
+printArea(height=6.6)
+printArea(width=2.2)
+
+# 返回多个值
+def multiSort(n1,n2):
+    if n1 > n2:
+        return n2,n1
+    else:
+        return n1,n2
+n1,n2 = multiSort(5,3)
+print("n1=",n1)
+print("n2=",n2)
